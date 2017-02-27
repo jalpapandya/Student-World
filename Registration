@@ -1,0 +1,270 @@
+<HTML>
+<head>
+<script language="JavaScript" type="text/JavaScript">
+
+
+function isFilled(elm)
+{
+    if (elm.value == ""||elm.value == null) 
+{
+        return false;
+}
+    else 
+{
+        return true;
+}
+}
+
+
+function confirmPassword(PW, PW2)
+{
+    if (PW.value == PW2.value)
+    {
+        return true;
+    }
+    else
+    {
+	    return false;
+    }
+}
+
+function length1(PW)
+	{
+	if(PW.value.length <= 3)
+	{
+return false;
+	}
+}
+
+
+
+function submitForm()
+{
+var minLength=6;
+
+ 	if (isFilled(registrationForm.UN) == false)
+    	{
+	        alert("Please enter your User name.");
+	        registrationForm.UN.focus();
+	        return false;
+    	}
+
+	
+
+	if (isFilled(registrationForm.PW) == false)
+    	{
+	        alert("Please enter Password.");
+	        registrationForm.PW.focus();
+	        return false;
+    	}
+
+	if(registrationForm.PW.value.length < minLength) 
+	{
+		alert('Your password must be at least ' + minLength + ' characters long. Try again.');
+		return false;
+	}
+
+
+	if (isFilled(registrationForm.PW2) == false)
+    	{
+	        alert("Please enter your confirm password");
+	        registrationForm.PW2.focus();
+	        return false;
+    	}
+
+	if (isFilled(registrationForm.PW) == false)
+    	{
+	        alert("Please enter your password.");
+	        registrationForm.PW.focus();
+	        return false;
+    	}
+
+
+
+
+	if (isFilled(registrationForm.EMAIL) == false)
+    	{
+	        alert("Please enter your Email Address");
+	        registrationForm.EMAIL.focus();
+	        return false;
+    	}
+
+	if( confirmPassword(registrationForm.PW,registrationForm.PW2) == false)
+	 {
+        	alert("Your Passwords do not match.  Please try again.");
+        	registrationForm.PW2.focus();
+	        return false;
+    	}
+
+	
+
+
+
+return true;
+   
+}
+</script>
+</head>
+<BODY TEXT = BLACK bgcolor=#cccccc>
+<fieldset>
+
+<FONT FACE=Stencil SIZE=7 COLOR=BLUE>
+<B><U>NEW REGISTRATION FORM:</B></U><BR></font>
+<h4>&nbsp;</h4>
+
+<legend>
+FIELDS MARKED WITH * ARE REQUIRED
+</legend>
+<FONT FACE=ARIAL>
+<FORM method="post" action="suc.html" NAME="registrationForm" onsubmit="return submitForm(this)">
+  <table cellpadding="10">
+    <tr>
+      <td ><b>USER NAME* :</b></td>
+      <td ><INPUT TYPE="TEXT" NAME="UN"></td>
+    </tr>
+    <tr>
+      <td><b>PASSWORD* : </b></td>
+      <td><INPUT TYPE="PASSWORD" NAME="PW2"></td>
+    </tr>
+    <tr>
+      <td><b>CONFIRM PASSWORD* : </b></td>
+      <td><INPUT TYPE="PASSWORD" NAME="PW"></td>
+    </tr>
+    <tr>
+      <td><b>GENDER : </b></td>
+      <td><b><input type="RADIO" name="GENDER" value=" MALE ">
+MALE</b></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td><b><input type="RADIO" name="GENDER" value="FEMALE ">
+FEMALE</b></td>
+    </tr>
+    <tr>
+      <td><b>DATE OF BIRTH : </b></td>
+      <td><SELECT name="select">
+          <OPTION VALUE="1">01
+          <OPTION VALUE="2">02
+          <OPTION VALUE="3">03
+          <OPTION VALUE="4">04
+          <OPTION VALUE="5">05
+          <OPTION VALUE="6">06
+          <OPTION VALUE="7">07
+          <OPTION VALUE="8">08
+          <OPTION VALUE="9">09
+          <OPTION VALUE="10">10
+          <OPTION VALUE="11">11
+          <OPTION VALUE="12">12
+          <OPTION VALUE="13">13
+          <OPTION VALUE="14">14
+          <OPTION VALUE="15">15
+          <OPTION VALUE="16">16
+          <OPTION VALUE="17">17
+          <OPTION VALUE="18">18
+          <OPTION VALUE="19">19
+          <OPTION VALUE="20">20
+          <OPTION VALUE="21">21
+          <OPTION VALUE="22">22
+          <OPTION VALUE="23">23
+          <OPTION VALUE="24">24
+          <OPTION VALUE="25">25
+          <OPTION VALUE="26">26
+          <OPTION VALUE="27">27
+          <OPTION VALUE="28">28
+          <OPTION VALUE="29">29
+          <OPTION VALUE="30">30
+          <OPTION VALUE="31">31
+        </SELECT>
+/
+<SELECT name="select">
+  <OPTION VALUE="01">01
+    <OPTION VALUE="02">02
+      <OPTION VALUE="03">03
+        <OPTION VALUE="04">04
+          <OPTION VALUE="05">05
+          <OPTION VALUE="06">06
+          <OPTION VALUE="07">07
+          <OPTION VALUE="08">08
+          <OPTION VALUE="09">09
+          <OPTION VALUE="10">10
+          <OPTION VALUE="11">11
+          <OPTION VALUE="12">12
+        </SELECT>
+/
+<SELECT name="select">
+  <OPTION VALUE="1970">1970
+    <OPTION VALUE="1971">1971
+      <OPTION VALUE="1972">1972
+        <OPTION VALUE="1973">1973
+          <OPTION VALUE="1974">1974
+          <OPTION VALUE="1975">1975
+          <OPTION VALUE="1976">1976
+          <OPTION VALUE="1977">1977
+          <OPTION VALUE="1978">1978
+          <OPTION VALUE="1979">1979
+          <OPTION VALUE="1980">1980
+          <OPTION VALUE="1981">1981
+          <OPTION VALUE="1982">1982
+          <OPTION VALUE="1983">1983
+          <OPTION VALUE="1984">1984
+          <OPTION VALUE="1985">1985
+          <OPTION VALUE="1986">1986
+          <OPTION VALUE="1987">1987
+          <OPTION VALUE="1988">1988
+          <OPTION VALUE="1989">1989
+          <OPTION VALUE="1990">1990
+          <OPTION VALUE="1991">1991
+          <OPTION VALUE="1992">1992
+          <OPTION VALUE="1993">1993
+          <OPTION VALUE="1994">1994
+          <OPTION VALUE="1995">1995
+          <OPTION VALUE="1996">1996
+          <OPTION VALUE="1997">1997
+          <OPTION VALUE="1998">1998
+          <OPTION VALUE="1999">1999
+          <OPTION VALUE="2000">2000
+          <OPTION VALUE="2001">2001
+          <OPTION VALUE="2002">2002
+          <OPTION VALUE="2003">2003
+          <OPTION VALUE="2004">2004
+          <OPTION VALUE="2005">2005
+        </SELECT>
+<FONT SIZE=2><I>dd/mm/yyyy</I></FONT></td>
+    </tr>
+    <tr>
+      <td><b>ADDRESS : </b></td>
+      <td><INPUT TYPE="TEXT" NAME="ADD"></td>
+    </tr>
+    <tr>
+      <td> <b>CITY :</b></td>
+      <td><INPUT TYPE="TEXT" NAME="CITY"></td>
+    </tr>
+    <tr>
+      <td><b>STATE : </b></td>
+      <td><INPUT TYPE="TEXT" NAME="STATE"></td>
+    </tr>
+    <tr>
+      <td><b>COUNTRY : </b></td>
+      <td><INPUT TYPE="TEXT" NAME="COUNTRY"></td>
+    </tr>
+    <tr>
+      <td><b>EMAIL ID* : </b></td>
+      <td><INPUT TYPE="TEXT" NAME="EMAIL"></td>
+    </tr>
+  </table>
+<b>
+  <p align="left"><INPUT TYPE="CHECKbox" NAME="UPDATES" VALUES="YES" CHECKED>
+  WANT UPDATES FROM US</p>
+  <p align="left">
+    <INPUT TYPE="CHECKbox" NAME="T&C" VALUES="YES" >
+  ACCEPT TERMS AND CONDITIONS</p>
+  <p align="center"><BR>
+    
+        <input type="submit" name="submit" value=" Submit ">
+        <input type="reset" name="reset" value=" Reset ">
+    <BR>
+  </p></b>
+</FORM>
+</fieldset>
+</BODY>
+</HTML>
