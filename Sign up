@@ -1,0 +1,14 @@
+<HTML>
+<BODY TEXT = BLUE BGCOLOR=#CCCCCC>
+<fieldset>
+<FONT FACE=ARIAL>
+<FORM>
+<b>USER NAME <INPUT TYPE="TEXT" NAME="UN"><BR>
+PASSWORD <INPUT TYPE="PASSWORD" NAME="PW"><BR></b>
+<input type="submit" name="submit" value=" Submit ">
+<input type="reset" name="reset" value=" Reset "><BR>
+<B><A HREF ="SIGNUP.HTML" TARGET="f4">::NEW SIGNUP::</A></B>
+</FORM>
+</fieldset>
+</BODY>
+</HTML>
