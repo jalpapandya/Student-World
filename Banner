@@ -1,0 +1,21 @@
+<HTML>
+<HEAD>
+<TITLE>BANNER</TITLE>
+</HEAD>
+<BODY BGCOLOR=#cccccc text=#000000>
+
+	<CENTER><FONT FACE=Stencil SIZE=7 COLOR=black>
+		<B><U>STUDENT WORLD</B></U></FONT>
+	</CENTER>
+
+<table BORDER=1 BORDERCOLOR=BLACK WIDTH="100%">
+<tr><th><A HREF="HOME.html" target="f4"><FONT COLOR=BLUE>HOME</FONT></A></th>
+       <TH><A HREF="signup.html" target="f4"><FONT COLOR=BLUE>SIGN UP</FONT></A></th>
+       <TH><A HREF="BOOK.html" target="f4"><FONT COLOR=BLUE>BOOKS</FONT></A></th>
+        <TH><A HREF="download.html" target="f4"><FONT COLOR=BLUE>DOWNLOADS</FONT></A></th>
+       <TH><A HREF="timetable.html" target="f4"><FONT COLOR=BLUE>TIME-TABLES</FONT></A></th>
+       <TH><A HREF="discution.html" target="f4"><FONT COLOR=BLUE>DISCUTION FORUM</FONT></A></th>
+       <TH><A HREF="contect.html" target="f4"><FONT COLOR=BLUE>CONTACT US</FONT></A></th>
+</table>
+</BODY>
+</HTML>
